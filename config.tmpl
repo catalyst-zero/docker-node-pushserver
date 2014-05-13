@@ -1,0 +1,24 @@
+{
+    "webPort": %%WEB_PORT%%,
+
+    "mongodbUrl": "%%MONGODB_URL%%",
+
+    "gcm": {
+        "apiKey": "%%GCM_API_KEY%%"
+    },
+
+    "apn": {
+        "connection": {
+            "gateway": "%%APN_CONNECTION_GATEWAY%%",
+            "cert": "/mnt/node-pushserver/cert.pem",
+            "key": "/mnt/node-pushserver/key.pem"
+        },
+        "feedback": {
+            "address": "%%APN_FEEDBACK_ADDRESS%%",
+            "cert": "/mnt/node-pushserver/cert.pem",
+            "key": "/mnt/node-pushserver/key.pem",
+            "interval": 43200,
+            "batchFeedback": true
+        }
+    }
+}
